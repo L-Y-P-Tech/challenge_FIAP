@@ -1,4 +1,4 @@
-# challenge_FIAP
+# Challenge_FIAP
 
 Membros:
 - Lucas Borges de Souza / 560027
