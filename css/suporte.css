@@ -1,0 +1,400 @@
+* {
+    box-sizing: border-box; 
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    overflow-x: hidden; 
+    font-family: 'Montserrat';
+}
+
+
+#logoViaMobilidade {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+header div {
+    background: rgb(238, 238, 238);
+    height: 55px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#logo {
+    width: 181px;
+    height: 26px;
+    margin: 20px;
+}
+
+#menuContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative; 
+}
+
+span#burguer {
+    color: #8B2119;
+    display: block;
+    text-align: center;
+    padding: 15px; 
+    cursor: pointer;
+}
+
+menu {
+    display: none; 
+    position: absolute;
+    top: 10px; 
+    right: 25px; 
+    z-index: 1000; 
+    background-color: #f0f0f0; 
+    border-radius: 10px; 
+    padding: 20px; 
+}
+
+menu.active {
+    display: block; 
+}
+
+menu > ul {
+    list-style-type: none;
+    padding: 0; 
+}
+
+menu > ul > li {
+    width: 100%; 
+    max-width: 300px; 
+    display: block;
+    margin: 5px auto; 
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    background-color: white; 
+    color: black;
+    border: 2px solid black;
+    text-decoration: none;
+    text-align: center ;
+}
+
+a.linkHamburguer{
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.imagemRotas {
+    width: 20px; 
+    height: 20px; 
+    vertical-align: middle;
+    display: inline-block;
+    margin-right: 5px; 
+}
+.container {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    padding-top: 60px;
+    background-color: #fff;    
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+.header img {
+    height: 30px;
+}
+.header .icons {
+    display: flex;
+    gap: 10px;
+}
+.header .icons i {
+    font-size: 20px;
+    color: #666;
+}
+#canalDeAtendimento {
+    text-align: left;
+    font-size: 16px;
+    font-weight: bold;
+    color: #8B2119;
+    padding: 10px; 
+    font-family: 'Montserrat';
+}
+#titulo_denuncias {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Montserrat';
+    color: #8B2119;
+    margin: 10px 0;
+    background-color: #8B2119; 
+    color: #fff; 
+    padding: 10px; 
+    border-radius: 5px;
+    cursor: pointer;
+}
+#opcoes_denuncia{
+    display: none;
+}
+
+.botao {
+    display: block;
+    width: auto;
+    padding: 15px;
+    margin: 5px 0 0 0;
+    background-color: #f5f5f5;
+    border: 1px solid #F0EFEF;
+    font-family: 'Montserrat';
+    border-radius: 5px;
+    text-align: center;
+    font-size: 18px;
+    color: #424448;
+    text-decoration: none;
+}
+.button:hover {
+    background-color: #e0e0e0;
+}
+.sms-section, .contact-section {
+    background-color: #f5f5f5;
+    font-family: 'Montserrat';
+    padding: 15px;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+.sms-section p, .contact-section p {
+    margin: 10px 0;
+    font-family: 'Montserrat';
+    font-size: 10px;
+    color: #424448;
+}
+#titulo_telefone{
+    font-weight: bold;
+    font-size: 14px;
+    img{
+        width: 16px;
+    }
+}
+
+#titulo_sms{
+    width: 105;
+    font-size: 14px;
+    font-weight: bold;
+    img{
+        width: 16px;
+    }
+}
+.sms-section a, .contact-section a {
+    color: #8B2119;
+    font-family: 'Montserrat';
+    text-decoration: none;
+    cursor: pointer;
+}
+.contact-section .phone-number {
+    font-size: 16px;
+    font-weight: bold;
+    color: #8B2119;
+}
+.contact-section .note {
+    margin: 0;
+    font-size: 10px;
+    color: #9D9D9D;
+}
+.contact-section .button {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    color: #424448;
+}
+
+footer div {
+    width: 100%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#rodape {
+    background-color: rgba(84, 86, 90, 0.9);
+    margin-top: 20px;
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    text-align: center; 
+}
+
+#LogoSimbolo {
+    width: 30px; 
+    height: 30px; 
+}
+
+#tituloRodape {
+    padding-top: 20px;
+    width: auto;
+    color: #fff;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 25px 25px;
+}
+
+#tituloRodape h1 {
+    margin-left: 20px;
+}
+
+#tituloRodape h3 {
+    padding-left: 15px;
+}
+
+#textos {
+    padding-top: 20px;
+    max-width: 393px;
+    font-size: 11px;
+    overflow-wrap: break-word;
+    text-align: center; 
+}
+
+#logoCinza {
+    height: 30px;
+    width: 40px;
+    padding-right: 20px;
+}
+
+.botaoRodape {
+    display: flex;
+    align-items: center;
+    background-color: #9D9D9D;
+    color: #2D3748;
+    padding: 10px 20px; 
+    margin: 10px auto; 
+    border-radius: 5px;
+    border: 1px solid #424448;
+    font-size: 18px;
+    text-decoration: none;
+    width: 300px;
+    transition: background-color 0.3s; 
+}
+
+.botaoRodape:hover {
+    background-color: #7f7f7f; 
+}
+
+.botaoRodape i {
+    margin-right: 10px;
+}
+
+#LogoSimboloCinza {
+    float: left;
+    width: 30px;
+    height: 30px;
+}
+
+#telefone {
+    color: #8B2119;
+    margin: 0 auto;
+    padding: 10px;
+    display: flex;
+    justify-content: center; 
+    font-weight: bold;
+    padding-top: 20px;
+    max-width: 393px;
+    overflow-wrap: break-word;
+}
+
+#linksContainer {
+    display: flex; 
+    justify-content: space-between; 
+    margin-top: 20px; 
+}
+
+#linksem {
+    text-decoration: none;
+    color: #fff;
+}
+
+#linksem:visited {
+    color: #fff; 
+}
+
+#linksem:hover {
+    color: #ccc; 
+}
+
+#tituloDescRodape {
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#AcesseRodape {
+    margin-top: 18px;
+    margin-bottom: 5px;
+}
+
+#CcrRodape {
+    margin-bottom: 5px;
+}
+
+#divRodapeLinks {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#pngTelefone {
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+}
+
+#conteudoRodape {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#rodape-aplicativo {
+    background-color: #8B2119;
+    color: #FCFCFC;
+    cursor: pointer;
+    height: 39px; 
+    width: 100%;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    bottom: 0;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+}
+
+#rodape-aplicativo .material-symbols-outlined {
+    margin-right: 10px; 
+}
+
+#rodape-aplicativo p {
+    margin: 0; 
+    text-align: center; 
+}
+
+#celular {
+    color: #FCFCFC;
+    background-color: #8B2119;
+    width: 16.4px;
+    height: 19.47px;
+    margin: 0 10px; 
+}
+

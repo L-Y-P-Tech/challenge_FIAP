@@ -1,0 +1,364 @@
+* {
+    box-sizing: border-box; 
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    overflow-x: hidden; 
+    font-family: 'Montserrat';
+}
+
+header div {
+    background: rgb(238, 238, 238);
+    height: 60px; 
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px; 
+}
+
+#logo {
+    width: 150px; 
+    height: auto; 
+}
+
+#menuContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative; 
+}
+
+span#burguer {
+    color: #8B2119;
+    display: block;
+    text-align: center;
+    padding: 15px; 
+    cursor: pointer;
+}
+
+menu {
+    display: none; 
+    position: absolute;
+    top: 10px; 
+    right: 25px; 
+    z-index: 1000; 
+    background-color: #f0f0f0; 
+    border-radius: 10px; 
+    padding: 20px; 
+}
+
+menu.active {
+    display: block; 
+}
+
+menu > ul {
+    list-style-type: none;
+    padding: 0; 
+}
+
+menu > ul > li {
+    width: 100%; 
+    max-width: 300px; 
+    display: block;
+    margin: 5px auto; 
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    background-color: white; 
+    color: black;
+    border: 2px solid black;
+    text-decoration: none;
+    text-align: center ;
+}
+
+a.linkHamburguer{
+    color: inherit;
+    text-decoration: inherit;
+}
+
+
+.imagemRotas {
+    width: 20px; 
+    height: 20px; 
+    vertical-align: middle;
+    display: inline-block;
+    margin-right: 5px; 
+}
+    .container {
+        background-color: white;
+        border-radius: 10px;
+        padding: 15px; 
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin: 20px;
+    }
+    .search-bar {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    .search-bar input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+
+    .status-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    .status-item,
+    .status-item.botao { 
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #eee;
+    margin-bottom: 5px;
+    background-color: #fff;
+    text-align: left;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    }
+
+    .status-item:last-child {
+        border-bottom: none;
+    }
+    .status-item .line-number {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        font-weight: bold;
+        margin-right: 10px;
+    }
+    .status-item .line-name {
+        flex: 1;
+    }
+    .status-item .line-status {
+        color: green;
+        font-weight: bold;
+        
+    }
+    button.status-item.botao {
+        border: none;
+        background: none;
+        padding: 5px;
+        margin: 5px;
+        
+    }
+.status-item .line-status.orange {
+    color: orange;
+}
+.status-item .line-status.red {
+    color: red;
+}
+.status-item .line-indicator {
+    width: 10px;
+    height: 30px;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+.status-item .line-indicator.green {
+    background-color: green;
+}
+.status-item .line-indicator.orange {
+    background-color: orange;
+}
+.status-item .line-indicator.red {
+    background-color: red;
+}
+
+footer div {
+    width: 100%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#rodape {
+    background-color: rgba(84, 86, 90, 0.9);
+    margin-top: 20px;
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    text-align: center; 
+}
+
+#LogoSimbolo {
+    width: 30px; 
+    height: 30px; 
+}
+
+#tituloRodape {
+    padding-top: 20px;
+    width: auto;
+    color: #fff;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 25px 25px;
+}
+
+#tituloRodape h1 {
+    margin-left: 20px;
+}
+
+#tituloRodape h3 {
+    padding-left: 15px;
+}
+
+#textos {
+    padding-top: 20px;
+    max-width: 393px;
+    font-size: 11px;
+    overflow-wrap: break-word;
+    text-align: center; 
+}
+
+#logoCinza {
+    height: 30px;
+    width: 40px;
+    padding-right: 20px;
+}
+
+.botaoRodape {
+    display: flex;
+    align-items: center;
+    background-color: #9D9D9D;
+    color: #2D3748;
+    padding: 10px 20px; 
+    margin: 10px auto; 
+    border-radius: 5px;
+    border: 1px solid #424448;
+    font-size: 18px;
+    text-decoration: none;
+    width: 300px;
+    transition: background-color 0.3s; 
+}
+
+.botaoRodape:hover {
+    background-color: #7f7f7f; 
+}
+
+.botaoRodape i {
+    margin-right: 10px;
+}
+
+#LogoSimboloCinza {
+    float: left;
+    width: 30px;
+    height: 30px;
+}
+
+#telefone {
+    color: #8B2119;
+    margin: 0 auto;
+    padding: 10px;
+    display: flex;
+    justify-content: center; 
+    font-weight: bold;
+    padding-top: 20px;
+    max-width: 393px;
+    overflow-wrap: break-word;
+}
+
+#linksContainer {
+    display: flex; 
+    justify-content: space-between; 
+    margin-top: 20px; 
+}
+
+#linksem {
+    text-decoration: none;
+    color: #fff;
+}
+
+#linksem:visited {
+    color: #fff; 
+}
+
+#linksem:hover {
+    color: #ccc; 
+}
+
+#tituloDescRodape {
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#AcesseRodape {
+    margin-top: 18px;
+    margin-bottom: 5px;
+}
+
+#CcrRodape {
+    margin-bottom: 5px;
+}
+
+#divRodapeLinks {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#pngTelefone {
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+}
+
+#conteudoRodape {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#rodape-aplicativo {
+    background-color: #8B2119;
+    color: #FCFCFC;
+    cursor: pointer;
+    height: 39px; 
+    width: 100%;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    bottom: 0;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+}
+
+#rodape-aplicativo .material-symbols-outlined {
+    margin-right: 10px; 
+}
+
+#rodape-aplicativo p {
+    margin: 0; 
+    text-align: center; /
+}
+
+#celular {
+    color: #FCFCFC;
+    background-color: #8B2119;
+    width: 16.4px;
+    height: 19.47px;
+    margin: 0 10px; 
+}

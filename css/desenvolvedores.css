@@ -1,0 +1,313 @@
+* {
+    box-sizing: border-box; 
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    overflow-x: hidden; 
+    font-family: 'Montserrat';
+}
+
+#logo {
+    width: 181px;
+    height: 26px;
+    margin: 20px;
+}
+
+header div {
+    background: rgb(238, 238, 238);
+    height: 55px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#menuContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative; 
+}
+
+#menuContainer h1{
+    margin: 0 auto;
+    font-size: 20px;
+
+}
+
+span#burguer {
+    color: #8B2119;
+    display: block;
+    text-align: center;
+    padding: 15px; 
+    cursor: pointer;
+}
+
+menu {
+    display: none; 
+    position: absolute;
+    top: 10px; 
+    right: 25px; 
+    z-index: 1000; 
+    background-color: #f0f0f0; 
+    border-radius: 10px; 
+    padding: 20px; 
+}
+
+menu.active {
+    display: block; 
+}
+
+menu > ul {
+    list-style-type: none;
+    padding: 0; 
+}
+
+menu > ul > li {
+    width: 100%; 
+    max-width: 300px; 
+    display: block;
+    margin: 5px auto; 
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    background-color: white; 
+    color: black;
+    border: 2px solid black;
+    text-decoration: none;
+    text-align: center ;
+}
+
+.imagemRotas {
+    width: 20px; 
+    height: 20px; 
+    vertical-align: middle;
+    display: inline-block;
+    margin-right: 5px; 
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.developer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+.developer img {
+    border-radius: 50%;
+    margin-right: 20px;
+    width: 100px;
+    height: 100px;
+}
+.developer-info {
+    flex: 1;
+    min-width: 200px;
+}
+.developer-info h2 {
+    margin: 0;
+    font-size: 24px;
+}
+.developer-info p {
+    margin: 5px 0;
+}
+.social-icons a {
+    color: #333;
+    margin-right: 10px;
+    text-decoration: none;
+}
+.social-icons a:hover {
+    color: #007BFF;
+}
+footer div {
+    width: 100%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#rodape {
+    background-color: rgba(84, 86, 90, 0.9);
+    margin-top: 20px;
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    text-align: center; 
+}
+
+#LogoSimbolo {
+    width: 30px; 
+    height: 30px; 
+}
+
+#tituloRodape {
+    padding-top: 20px;
+    width: auto;
+    color: #fff;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 25px 25px;
+}
+
+#tituloRodape h1 {
+    margin-left: 20px;
+}
+
+#tituloRodape h3 {
+    padding-left: 15px;
+}
+
+#textos {
+    padding-top: 20px;
+    max-width: 393px;
+    font-size: 11px;
+    overflow-wrap: break-word;
+    text-align: center; 
+}
+
+#logoCinza {
+    height: 30px;
+    width: 40px;
+    padding-right: 20px;
+}
+
+.botaoRodape {
+    display: flex;
+    align-items: center;
+    background-color: #9D9D9D;
+    color: #2D3748;
+    padding: 10px 20px; 
+    margin: 10px auto; 
+    border-radius: 5px;
+    border: 1px solid #424448;
+    font-size: 18px;
+    text-decoration: none;
+    width: 300px;
+    transition: background-color 0.3s; 
+}
+
+.botaoRodape:hover {
+    background-color: #7f7f7f; 
+}
+
+.botaoRodape i {
+    margin-right: 10px;
+}
+
+#LogoSimboloCinza {
+    float: left;
+    width: 30px;
+    height: 30px;
+}
+
+#telefone {
+    color: #8B2119;
+    margin: 0 auto;
+    padding: 10px;
+    display: flex;
+    justify-content: center; 
+    font-weight: bold;
+    padding-top: 20px;
+    max-width: 393px;
+    overflow-wrap: break-word;
+}
+
+#linksContainer {
+    display: flex; 
+    justify-content: space-between; 
+    margin-top: 20px; 
+}
+
+#linksem {
+    text-decoration: none;
+    color: #fff;
+}
+
+#linksem:visited {
+    color: #fff; 
+}
+
+#linksem:hover {
+    color: #ccc; 
+}
+
+#tituloDescRodape {
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#AcesseRodape {
+    margin-top: 18px;
+    margin-bottom: 5px;
+}
+
+#CcrRodape {
+    margin-bottom: 5px;
+}
+
+#divRodapeLinks {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#pngTelefone {
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+}
+
+#conteudoRodape {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#rodape-aplicativo {
+    background-color: #8B2119;
+    color: #FCFCFC;
+    cursor: pointer;
+    height: 39px; 
+    width: 100%;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    bottom: 0;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+}
+
+#rodape-aplicativo .material-symbols-outlined {
+    margin-right: 10px; 
+}
+
+#rodape-aplicativo p {
+    margin: 0; 
+    text-align: center; /
+}
+
+#celular {
+    color: #FCFCFC;
+    background-color: #8B2119;
+    width: 16.4px;
+    height: 19.47px;
+    margin: 0 10px; 
+}
