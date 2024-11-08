@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Status</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/status.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu,smartphone" />
+
+</head>
+<body>
+    <header>
+        <div id="menuContainer"> <!---Menu padrão para todas as páginas que o usuário poderá acessar de uma meneira mais prática-->
+            <img id="logo" src="png/LogoCCR.png" alt="LogoViamobilidade">
+            <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+        </div>
+        <menu id="itens" class="hidden">
+            <ul >
+                <li>
+                    <a  href="Rotas_PaginaPrincipal.html" class="linkHamburguer">
+                        <img class="imagemRotas" src="png/rotasNaoSelecionado.png" alt="Rotas">Rotas
+                    </a>
+                </li>
+                <li>
+                    <a href="status.html" class="linkHamburguer">
+                        <img class="imagemRotas" src="png/status.png" alt="Status" > Status
+                    </a>
+                </li>
+                <li>
+                    <a href="suporte.html" class="linkHamburguer">
+                        <img class="imagemRotas" src="png/suporte.png" alt="Suporte"> Suporte
+                    </a>
+                </li>
+
+                <li>
+                    <a href="chatMobi.html" class="linkHamburguer">
+                        <img class="imagemRotas" src="png/chatMobi.png" alt="ChatMobi"> ChatMobi
+                    </a>
+                </li>
+
+                <li>
+                    <a href="desenvolvedores.html" class="linkHamburguer">
+                        <img class="imagemRotas" src="png/notebook.png" alt="ChatMobi"> Devs
+                    </a>
+                </li>
+            </ul>
+        </menu>
+    </header>
+    <div class="container">
+        <div class="search-bar">
+            <input type="text" placeholder="🔍 Busque uma estação">
+        </div>
+        <div class="status-list">
+            <a href="linha1.html" style="text-decoration: none;  color: black;">
+            <button class="status-item botao">
+                <div class="line-number" style="background-color: #011289;">1</div>
+                <div class="line-name">Azul</div>
+                <div class="line-status">Operação normal</div>
+                <div class="line-indicator green"></div>
+            </button>
+            </a>
+
+            <a href="linha2.html" style="text-decoration: none;  color: black;">
+            <button class="status-item botao">
+                <div class="line-number" style="background-color: #01775A;">2</div>
+                <div class="line-name">Verde</div>
+                <div class="line-status">Operação normal</div>
+                <div class="line-indicator green"></div>
+            </button>
+            </a>
+            
+            <a href="linha3.html" style="text-decoration: none;  color: black;">
+                <button class="status-item botao">
+                    <div class="line-number" style="background-color: #F51200;">3</div>
+                    <div class="line-name">Vermelha</div>
+                    <div class="line-status">Operação normal</div>
+                    <div class="line-indicator green"></div>
+                </button>
+            </a>
+
+            <a href="linha4.html" style="text-decoration: none;  color: black;">
+                <button class="status-item botao">
+                    <div class="line-number" style="background-color: #FDC426;">4</div>
+                    <div class="line-name">Amarela</div>
+                    <div class="line-status">Operação normal</div>
+                    <div class="line-indicator green"></div>
+                </button>
+            </a>
+
+            <a href="linha5.html" style="text-decoration: none;  color: black;">
+            <button class="status-item botao">
+                <div class="line-number" style="background-color: #9A3784;">5</div>
+                <div class="line-name">Lilás</div>
+                <div class="line-status">Operação normal</div>
+                <div class="line-indicator green"></div>
+            </button>
+            </a>
+
+            <a href="linha7.html" style="text-decoration: none;  color: black;">
+            <button class="status-item botao">
+                <div class="line-number" style="background-color: #C80857;">7</div>
+                <div class="line-name">Rubi</div>
+                <div class="line-status">Operação normal</div>
+                <div class="line-indicator green"></div>
+            </button>
+            </a>
+            
+            <a href="linha8.html" style="text-decoration: none;  color: black;">
+                <button class="status-item botao">
+                    <div class="line-number" style="background-color: #949488;">8</div>
+                    <div class="line-name">Diamante</div>
+                    <div class="line-status red">Circulação de trens</div>
+                    <div class="line-indicator red"></div>
+                </button>
+            </a>
+
+            <a href="linha9.html" style="text-decoration: none;  color: black;">
+                <button class="status-item botao">
+                    <div class="line-number" style="background-color: #009896;">9</div>
+                    <div class="line-name">Esmeralda</div>
+                    <div class="line-status orange">Falta de energia</div>
+                    <div class="line-indicator orange"></div>
+                </button>
+            </a>
+
+            <a href="linha10.html" style="text-decoration: none;  color: black;">
+                <button class="status-item botao">
+                    <div class="line-number" style="background-color: #008AAB;">10</div>
+                    <div class="line-name">Turquesa</div>
+                    <div class="line-status">Operação normal</div>
+                    <div class="line-indicator green"></div>
+                </button>
+            </a>
+
+            <a href="linha11.html" style="text-decoration: none;  color: black;">
+                <button class="status-item botao">
+                    <div class="line-number" style="background-color: #F46C55;">11</div>
+                    <div class="line-name">Coral</div>
+                    <div class="line-status orange">Obras na via</div>
+                    <div class="line-indicator orange"></div>
+                </button>
+            </a>
+
+            <a href="linha12.html" style="text-decoration: none;  color: black;">
+                <button class="status-item botao">
+                    <div class="line-number" style="background-color: #1F2086;">12</div>
+                    <div class="line-name">Safira</div>
+                    <div class="line-status">Operação normal</div>
+                    <div class="line-indicator green"></div>
+                </button>
+            </a>
+
+            <a href="linha13.html" style="text-decoration: none;  color: black;">
+                <button class="status-item botao">
+                    <div class="line-number" style="background-color: #29B352;">13</div>
+                    <div class="line-name">Jade</div>
+                    <div class="line-status">Operação normal</div>
+                    <div class="line-indicator green"></div>
+                </button>
+            </a>
+
+            <a href="linha15.html" style="text-decoration: none;  color: black;">
+                <button class="status-item botao">
+                    <div class="line-number" style="background-color: #848D90;">15</div>
+                    <div class="line-name">Prata</div>
+                    <div class="line-status">Operação normal</div>
+                    <div class="line-indicator green"></div>
+                </button>
+            </a>
+        </div>
+    </div>
+
+    <footer>
+        <div id="rodape"><!--rodapé informativo padrão para todas as páginas-->
+            <div id="tituloRodape">
+                <img src="css/simboloccr.png" id="LogoSimbolo" alt="Logo">
+                <h3>Fale com a ViaMobilidade</h3>
+            </div>
+            <div id="textos">
+                Para informações sobre as linhas, achados e perdidos e atendimento nas estações, ligue para a 
+                Central de Atendimento.
+            </div>
+            <div id="telefone">
+                <img src="css/telefoneVermelho.png" id="pngTelefone" alt="Telefone">
+                0800 - 770 - 7106
+            </div>
+
+            <div id="textos">
+                Segunda a sexta das 06h30 às 22h00, sábado das 08h00 às 18h00
+            </div>
+            <a href="https://www.grupoccr.com.br/contatos/" class="botaoRodape">
+                <img src="css/simboloccrCinza.png" id="logoCinza" alt="Logo Cinza">
+                Ouvidoria
+            </a>
+            <a href="https://rodovias.grupoccr.com.br/riosp/central-de-ajuda/fale-conosco/" class="botaoRodape">
+                <img src="css/simboloccrCinza.png" id="logoCinza" alt="Logo Cinza">
+                Fale Conosco
+            </a>
+
+            <div id="linksContainer"> <!-- Novo contêiner para os links -->
+                <div>
+                    <ul id="divRodapeLinks">Acesse
+                        <li><a href="Rotas_PaginaPrincipal.html" id="linksem">Rotas</a></li>
+                        <li><a href="status.html" id="linksem">Status</a></li>
+                        <li><a href="suporte.html" id="linksem">Suporte</a></li>
+                        <li><a href="chatMobi.html" id="linksem">ChatMobi</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul id="divRodapeLinks"> CCR
+                        <li>
+                            <a href="https://www.viamobilidade.com.br/nos/empresas" id="linksem">Sobre Nós</a>
+                        </li>
+                        <li>
+                            <a href="https://viamobilidade.com.br/politica-de-privacidade" id="linksem">Política de Privacidade</a>
+                        </li>
+                        <li>
+                            <a href="https://www.viamobilidade.com.br/termos-de-uso" id="linksem">Termos de uso</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- BAIXE O APLICATIVO DA VIA MOBILIDADE -->
+    <footer>
+        <div id="rodape-aplicativo" onclick="tggleAplicativo()">
+            <span id="celular" class="material-symbols-outlined">
+                smartphone
+            </span>
+            <p>Baixe o aplicativo da ViaMobilidade</p>
+        </div>
+    </footer>
+</body>
+</html>

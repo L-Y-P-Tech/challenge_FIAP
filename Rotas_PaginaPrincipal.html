@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/rotas_paginaPrincipal_es.css">
+    <link rel="stylesheet" href="css/rotas_paginaPrincipal_sm.css">
+    <link rel="stylesheet" href="css/chatMobi.css">
+    <link rel="stylesheet" href="css/rotas_paginaPrincipal_ex.css">
+    <script src="js/script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu,smartphone" />
+    <link rel="icon" href="png/logoViaMobilidade.png" id="logoViaMobilidade">
+    <title> Rotas </title>
+</head>
+<body>
+    <header>
+        <div id="menuContainer"> <!---Menu padrão para todas as páginas que o usuário poderá acessar de uma meneira mais prática-->
+            <img id="logo" src="png/LogoCCR.png" alt="LogoViamobilidade">
+            <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+        </div>
+        <menu id="itens" class="hidden">
+            <ul >
+                <li>
+                    <a  href="Rotas_PaginaPrincipal.html" class="linkHamburguer">
+                        <img class="imagemRotas" src="png/rotasNaoSelecionado.png" alt="Rotas">Rotas
+                    </a>
+                </li>
+                <li>
+                    <a href="status.html" class="linkHamburguer">
+                        <img class="imagemRotas" src="png/status.png" alt="Status" > Status
+                    </a>
+                </li>
+                <li>
+                    <a href="suporte.html" class="linkHamburguer">
+                        <img class="imagemRotas" src="png/suporte.png" alt="Suporte"> Suporte
+                    </a>
+                </li>
+
+                <li>
+                    <a href="chatMobi.html" class="linkHamburguer">
+                        <img class="imagemRotas" src="png/chatMobi.png" alt="ChatMobi"> ChatMobi
+                    </a>
+                </li>
+
+                <li>
+                    <a href="desenvolvedores.html" class="linkHamburguer">
+                        <img class="imagemRotas" src="png/notebook.png" alt="ChatMobi"> Devs
+                    </a>
+                </li>
+            </ul>
+        </menu>
+    </header>
+    <main id="wrapper">
+        <div id="caminhoUsuario"> <!--O usuário terá algumas opções para buscar o local que deseja, como digitando diretamente o endereço, ou clicando em um dos locais mais recentes, ou ainda através do mapa.-->
+            <input type="text" placeholder="Para onde você deseja ir?" id="caixaTexto">
+        </div>
+        <div id="container">
+            <div id="recentes">
+                <p id="tituloEstação">RECENTES</p>
+            </div>
+            <br>
+            <div id="estacao1">
+                <p>Estação de Osasco</p>
+            </div>
+            <br>
+            <div id="estacao2">
+                <p>Avenida Paulista, 1106</p>
+            </div>
+        </div>
+        <div id="cliqueMapa">
+            <p>Ou busque pelo mapa:</p>
+        </div>
+        <div>
+            <img id="mapa" src="png/mapa.png" alt="Mapa">
+        </div>
+        
+    </main>
+    <footer>
+        <div id="rodape"><!--rodapé informativo padrão para todas as páginas-->
+            <div id="tituloRodape">
+                <img src="css/simboloccr.png" id="LogoSimbolo">
+                <h3>Fale com a ViaMobilidade</h3>
+            </div>
+            <div id="textos">
+                Para informações sobre as linhas, achados e perdidos e atendimento nas estações, ligue para a 
+                Central de Atendimento.
+            </div>
+            <div id="telefone">
+                <img src="css/telefoneVermelho.png" id="pngTelefone">
+                0800 - 770 - 7106
+            </div>
+
+            <div id="textos">
+                Segunda a sexta das 06h30 às 22h00, sábado das 08h00 às 18h00
+
+            </div>
+            <a href="https://www.grupoccr.com.br/contatos/" class="button">
+                <img src="css/simboloccrCinza.png" id="logoCinza">
+                Ouvidoria
+            </a>
+            <a href="https://rodovias.grupoccr.com.br/riosp/central-de-ajuda/fale-conosco/" class="button">
+                <img src="css/simboloccrCinza.png" id="logoCinza">
+                Fale Conosco
+            </a>
+            <div id="linksContainer"> 
+                <div>
+                    <ul id="divRodapeLinks">Acesse
+                        <li><a href="Rotas_PaginaPrincipal.html" id="linksem">Rotas</a></li>
+                        <li><a href="status.html" id="linksem">Status</a></li>
+                        <li><a href="suporte.html" id="linksem">Suporte</a></li>
+                        <li><a href="chatMobi.html" id="linksem">ChatMobi</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul id="divRodapeLinks"> CCR
+                        <li>
+                            <a href="https://www.viamobilidade.com.br/nos/empresas" id="linksem">Sobre Nós</a>
+                        </li>
+                        <li>
+                            <a href="https://viamobilidade.com.br/politica-de-privacidade" id="linksem">Política de Privacidade</a>
+                        </li>
+                        <li>
+                            <a href="https://www.viamobilidade.com.br/termos-de-uso" id="linksem">Termos de uso</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- BAIXE O APLICATIVO DA VIA MOBILIDADE -->
+    <footer>
+        <div id="rodape-aplicativo" onclick="tggleAplicativo()">
+            <span id="celular" class="material-symbols-outlined">
+                smartphone
+                </span>
+                <p>Baixe o aplicativo da ViaMobilidade</p>
+        </div>
+    </footer>
+
+
+</body>
+</html>
+
