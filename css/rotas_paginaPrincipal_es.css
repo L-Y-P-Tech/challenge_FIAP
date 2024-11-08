@@ -51,6 +51,12 @@
         padding: 15px; 
         cursor: pointer;
     }
+
+        
+    .linkHamburguer {
+        color: black; /* Coloca o texto em preto */
+        text-decoration: none; /* Remove o sublinhado dos links */
+    }
     
     menu {
         display: none; 
@@ -86,12 +92,6 @@
         text-decoration: none;
         text-align: center ;
     }
-
-    a.linkHamburguer{
-        color: inherit;
-        text-decoration: inherit;
-    }
-    
     
     .imagemRotas {
         width: 20px; 
@@ -127,6 +127,7 @@
         background-repeat: no-repeat;
         background-size: 25px 25px;
         font-style: italic;
+        margin-top: 20px;
     }
 
     #caixaTexto:focus {
@@ -148,11 +149,7 @@
         border-bottom: 2px solid #ccc;
     }
 
-    #recentes p,
-    #estacao p,
-    #estacao1 p,
-    #estacao2 p,
-    #cliqueMapa p {
+    #recentes p, #estacao p, #estacao1 p, #estacao2 p, #cliqueMapa p {
         color: rgba(66, 68, 72, 0.8);
         font-family: 'Inter', sans-serif;
         margin-left: 5px;
@@ -175,10 +172,11 @@
         background-size: 15px 15px;
     }
 
-    #estacao1 p,
-    #estacao2 p {
+    #estacao1 p, #estacao2 p {
         margin-left: 18px;
+
     }
+    
 
     
 
@@ -255,7 +253,7 @@
 
     #logoCinza {
         height: 30px;
-        width: 30px;
+        width: 50px;
         padding-right: 20px;
     }
 
@@ -328,23 +326,14 @@
     
     #divRodapeLinks {
         list-style-type: none;
-        padding: 0;
-        margin: 0;
     }
     
     #pngTelefone {
         height: 20px;
         width: 20px;
         margin-right: 10px;
+        
     }
-
-    #conteudoRodape {
-        flex-grow: 1;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
 
     #rodape-aplicativo{
         background-color: #8B2119;
@@ -355,18 +344,14 @@
         font-size: 16px;
         font-family: 'Montserrat', sans-serif;
         bottom: 0;
-        display: flex; 
-        align-items: center; 
+        display: flex; /* Adiciona flexbox */
+        align-items: center; /* Alinha os itens verticalmente ao centro */
         margin: auto; 
     }
     #rodape-aplicativo .material-symbols-outlined {
-        margin-right: 45px;
-        margin-top: 8px;
+        margin-right: 40px; 
     }
 
-    #rodape-aplicativo p {
-        margin: 0px  auto 0px 20px ; 
-    }
 
     #celular {
         color: #FCFCFC;
@@ -375,5 +360,6 @@
         height: 19.47px;
         margin:auto;
     }
+
 
 }

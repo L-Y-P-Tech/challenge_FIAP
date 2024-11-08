@@ -49,6 +49,12 @@ span#burguer {
     cursor: pointer;
 }
 
+    
+.linkHamburguer {
+    color: black; /* Coloca o texto em preto */
+    text-decoration: none; /* Remove o sublinhado dos links */
+}
+
 menu {
     display: none; 
     position: absolute;
@@ -82,11 +88,6 @@ menu > ul > li {
     border: 2px solid black;
     text-decoration: none;
     text-align: center ;
-}
-
-a.linkHamburguer{
-    color: inherit;
-    text-decoration: inherit;
 }
 
 .imagemRotas {
@@ -270,7 +271,7 @@ footer div {
 
 #logoCinza {
     height: 30px;
-    width: 40px;
+    width: 50px;
     padding-right: 20px;
 }
 
@@ -382,7 +383,7 @@ footer div {
 }
 
 #rodape-aplicativo .material-symbols-outlined {
-    margin-right: 10px; 
+    margin-right: 40px; 
 }
 
 #rodape-aplicativo p {

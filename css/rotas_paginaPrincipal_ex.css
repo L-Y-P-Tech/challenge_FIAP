@@ -36,6 +36,14 @@
         justify-content: space-between;
         position: relative; 
     }
+
+    
+    .linkHamburguer {
+        color: black; /* Coloca o texto em preto */
+        text-decoration: none; /* Remove o sublinhado dos links */
+    }
+    
+
     
     span#burguer {
         color: #8B2119;
@@ -79,12 +87,6 @@
         text-decoration: none;
         text-align: center ;
     }
-
-    a.linkHamburguer{
-        color: inherit;
-        text-decoration: inherit;
-    }
-    
     
     .imagemRotas {
         width: 20px; 
@@ -112,6 +114,7 @@
         background-repeat: no-repeat;
         background-size: 25px 25px;
         font-style: italic;
+        margin-top: 20px;
     }
 
     #caixaTexto:focus {
@@ -226,7 +229,7 @@
 
     #logoCinza {
         height: 30px;
-        width: 30px;
+        width: 50px;
         padding-right: 20px;
     }
 

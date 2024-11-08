@@ -44,6 +44,13 @@
         padding: 15px; 
         cursor: pointer;
     }
+
+        
+    .linkHamburguer {
+        color: black; /* Coloca o texto em preto */
+        text-decoration: none; /* Remove o sublinhado dos links */
+    }
+
     
     menu {
         display: none; 
@@ -79,12 +86,6 @@
         text-decoration: none;
         text-align: center ;
     }
-
-    a.linkHamburguer{
-        color: inherit;
-        text-decoration: inherit;
-    }
-    
     
     .imagemRotas {
         width: 20px; 
@@ -113,12 +114,13 @@
         background-repeat: no-repeat;
         background-size: 25px 25px;
         font-style: italic;
+        margin-top: 20px;
     }
-
     #caixaTexto:focus {
         border-color: #007bff;
         outline: none;
     }
+
     #container {
         border: 2px solid #ccc;
         border-radius: 10px;
@@ -226,7 +228,7 @@
 
     #logoCinza {
         height: 30px;
-        width: 30px;
+        width: 50px;
         padding-right: 20px;
     }
 
@@ -307,7 +309,6 @@
     #pngTelefone {
         height: 20px;
         width: 20px;
-        margin-right: 10px;
     }
     
     #rodape-aplicativo{
@@ -324,13 +325,9 @@
         margin: auto; 
     }
     #rodape-aplicativo .material-symbols-outlined {
-        margin-right: 45px;
-        margin-top: 8px;
+        margin: 10px auto 10px 10px;
     }
 
-    #rodape-aplicativo p {
-        margin: 0px  auto 0px 20px ; 
-    }
 
     #celular {
         color: #FCFCFC;
@@ -339,6 +336,5 @@
         height: 19.47px;
         margin:auto;
     }
-
 
 }

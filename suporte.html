@@ -1,169 +1,171 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/suporte.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <script src="js/script.js"></script>
-    <title>Suporte</title>
-</head>
-<body>
-    <header>
-        <div id="menuContainer"> <!---Menu padrão para todas as páginas que o usuário poderá acessar de uma meneira mais prática-->
-            <img id="logo" src="png/LogoCCR.png" alt="LogoViamobilidade">
-            <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
-        </div>
-        <menu id="itens" class="hidden">
-            <ul >
-                <li>
-                    <a  href="Rotas_PaginaPrincipal.html" class="linkHamburguer">
-                        <img class="imagemRotas" src="png/rotasNaoSelecionado.png" alt="Rotas">Rotas
-                    </a>
-                </li>
-                <li>
-                    <a href="status.html" class="linkHamburguer">
-                        <img class="imagemRotas" src="png/status.png" alt="Status" > Status
-                    </a>
-                </li>
-                <li>
-                    <a href="suporte.html" class="linkHamburguer">
-                        <img class="imagemRotas" src="png/suporte.png" alt="Suporte"> Suporte
-                    </a>
-                </li>
+    <head>
+        <script src="https://cdn.userway.org/widget.js" data-account="wWYZXkVTsK"></script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/suporte.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+        <script src="js/script.js"></script>
+        <link rel="icon" href="png/logoViaMobilidade.png" id="logoViaMobilidade">
+        <title> Suporte </title>
+    </head>
+    <body>
+        <header>
+            <div id="menuContainer"> <!---Menu padrão para todas as páginas que o usuário poderá acessar de uma meneira mais prática-->
+                <img id="logo" src="png/LogoCCR.png" alt="LogoViamobilidade">
+                <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+            </div>
+            <menu id="itens" class="hidden">
+                <ul >
+                    <li>
+                        <a  href="Rotas_PaginaPrincipal.html" class="linkHamburguer">
+                            <img class="imagemRotas" src="png/rotasNaoSelecionado.png" alt="Rotas">Rotas
+                        </a>
+                    </li>
+                    <li>
+                        <a href="status.html" class="linkHamburguer">
+                            <img class="imagemRotas" src="png/status.png" alt="Status" > Status
+                        </a>
+                    </li>
+                    <li>
+                        <a href="suporte.html" class="linkHamburguer">
+                            <img class="imagemRotas" src="png/suporte.png" alt="Suporte"> Suporte
+                        </a>
+                    </li>
 
-                <li>
-                    <a href="chatMobi.html" class="linkHamburguer">
-                        <img class="imagemRotas" src="png/chatMobi.png" alt="ChatMobi"> ChatMobi
-                    </a>
-                </li>
+                    <li>
+                        <a href="chatMobi.html" class="linkHamburguer">
+                            <img class="imagemRotas" src="png/chatMobi.png" alt="ChatMobi"> ChatMobi
+                        </a>
+                    </li>
 
-                <li>
-                    <a href="desenvolvedores.html" class="linkHamburguer">
-                        <img class="imagemRotas" src="png/notebook.png" alt="ChatMobi"> Devs
-                    </a>
-                </li>
-            </ul>
-        </menu>
-    </header>
-    <div class="container">
-        <div class="title" id="canalDeAtendimento">
-         Canal de Atendimento
-        </div>
-        <div class="title" id = "titulo_denuncias" onclick="toggleDenuncias()">
-         DENUNCIAS
-        </div>
-        <div id = "opcoes_denuncia">
-            <a class="botao" href="#">
-            Violência Física</a><br>
-            <a class="botao" href="#">
-            Violência Verbal</a><br>
-            <a class="botao" href="#">
-            Violência Sexual</a><br>
-            <a class="botao" href="#">
-            Vendas Ilegais</a>
-        </div>
-        <div class="sms-section">
-         <p id="titulo_sms">
-          SMS Denúncia
-          <img src="png/sms.png">
-         </p>
-         <p>
-          Envie um SMS para
-          <a href="sms:11912776323">
-           11 91277-6323
-          </a>
-         </p>
-        </div>
-        <div class="contact-section">
-         <p id="titulo_telefone">
-          <img src="png/telefone.png">
-          Fale com a ViaMobilidade
-         </p>
-         <p>
-          Para informações sobre as linhas, achados e perdidos e atendimento nas estações, ligue para a Central de Atendimento.
-         </p>
-         <p class="phone-number">
-          0800 - 770 - 7106
-         </p>
-         <p class="note">
-          Segunda a sexta das 06h30 às 22h00, sábado das 08h00 às 18h00
-         </p>
-         <p>
-          <a href="">
-           <strong>Ouvidoria:</strong> entre em contato direto pelo nosso site
-          </a>
-         </p>
-        </div>
-        <a class="botao" href="#">
-         <i class="fas fa-comments">
-         </i>
-         Fale Conosco
-        </a>
-       </div>
-       <footer>
-        <div id="rodape"><!--rodapé informativo padrão para todas as páginas-->
-            <div id="tituloRodape">
-                <img src="css/simboloccr.png" id="LogoSimbolo" alt="Logo">
-                <h3>Fale com a ViaMobilidade</h3>
+                    <li>
+                        <a href="desenvolvedores.html" class="linkHamburguer">
+                            <img class="imagemRotas" src="png/notebook.png" alt="ChatMobi"> Devs
+                        </a>
+                    </li>
+                </ul>
+            </menu>
+        </header>
+        <div class="container">
+            <div class="title" id="canalDeAtendimento">
+            Canal de Atendimento
             </div>
-            <div id="textos">
-                Para informações sobre as linhas, achados e perdidos e atendimento nas estações, ligue para a 
-                Central de Atendimento.
+            <div class="title" id = "titulo_denuncias" onclick="toggleDenuncias()">
+            DENUNCIAS
             </div>
-            <div id="telefone">
-                <img src="css/telefoneVermelho.png" id="pngTelefone" alt="Telefone">
-                0800 - 770 - 7106
+            <div id = "opcoes_denuncia">
+                <a class="botao" href="#">
+                Violência Física</a><br>
+                <a class="botao" href="#">
+                Violência Verbal</a><br>
+                <a class="botao" href="#">
+                Violência Sexual</a><br>
+                <a class="botao" href="#">
+                Vendas Ilegais</a>
             </div>
-
-            <div id="textos">
-                Segunda a sexta das 06h30 às 22h00, sábado das 08h00 às 18h00
-            </div>
-            <a href="https://www.grupoccr.com.br/contatos/" class="botaoRodape">
-                <img src="css/simboloccrCinza.png" id="logoCinza" alt="Logo Cinza">
-                Ouvidoria
+            <div class="sms-section">
+            <p id="titulo_sms">
+            SMS Denúncia
+            <img src="png/sms.png">
+            </p>
+            <p>
+            Envie um SMS para
+            <a href="sms:11912776323">
+            11 91277-6323
             </a>
-            <a href="https://rodovias.grupoccr.com.br/riosp/central-de-ajuda/fale-conosco/" class="botaoRodape">
-                <img src="css/simboloccrCinza.png" id="logoCinza" alt="Logo Cinza">
-                Fale Conosco
+            </p>
+            </div>
+            <div class="contact-section">
+            <p id="titulo_telefone">
+            <img src="png/telefone.png">
+            Fale com a ViaMobilidade
+            </p>
+            <p>
+            Para informações sobre as linhas, achados e perdidos e atendimento nas estações, ligue para a Central de Atendimento.
+            </p>
+            <p class="phone-number">
+            0800 - 770 - 7106
+            </p>
+            <p class="note">
+            Segunda a sexta das 06h30 às 22h00, sábado das 08h00 às 18h00
+            </p>
+            <p>
+            <a href="#">
+            <strong>Ouvidoria:</strong> entre em contato direto pelo nosso site
             </a>
-
-            <div id="linksContainer"> <!-- Novo contêiner para os links -->
-                <div>
-                    <ul id="divRodapeLinks">Acesse
-                        <li><a href="Rotas_PaginaPrincipal.html" id="linksem">Rotas</a></li>
-                        <li><a href="status.html" id="linksem">Status</a></li>
-                        <li><a href="suporte.html" id="linksem">Suporte</a></li>
-                        <li><a href="chatMobi.html" id="linksem">ChatMobi</a></li>
-                    </ul>
+            </p>
+            </div>
+            <a class="botao" href="#">
+            <i class="fas fa-comments">
+            </i>
+            Fale Conosco
+            </a>
+        </div>
+        <footer>
+            <div id="rodape"><!--rodapé informativo padrão para todas as páginas-->
+                <div id="tituloRodape">
+                    <img src="css/simboloccr.png" id="LogoSimbolo" alt="Logo">
+                    <h3>Fale com a ViaMobilidade</h3>
                 </div>
-                <div>
-                    <ul id="divRodapeLinks"> CCR
-                        <li>
-                            <a href="https://www.viamobilidade.com.br/nos/empresas" id="linksem">Sobre Nós</a>
-                        </li>
-                        <li>
-                            <a href="https://viamobilidade.com.br/politica-de-privacidade" id="linksem">Política de Privacidade</a>
-                        </li>
-                        <li>
-                            <a href="https://www.viamobilidade.com.br/termos-de-uso" id="linksem">Termos de uso</a>
-                        </li>
-                    </ul>
+                <div id="textos">
+                    Para informações sobre as linhas, achados e perdidos e atendimento nas estações, ligue para a 
+                    Central de Atendimento.
+                </div>
+                <div id="telefone">
+                    <img src="css/telefoneVermelho.png" id="pngTelefone" alt="Telefone">
+                    0800 - 770 - 7106
+                </div>
+
+                <div id="textos">
+                    Segunda a sexta das 06h30 às 22h00, sábado das 08h00 às 18h00
+                </div>
+                <a href="https://www.grupoccr.com.br/contatos/" class="botaoRodape">
+                    <img src="css/simboloccrCinza.png" id="logoCinza" alt="Logo Cinza">
+                    Ouvidoria
+                </a>
+                <a href="https://rodovias.grupoccr.com.br/riosp/central-de-ajuda/fale-conosco/" class="botaoRodape">
+                    <img src="css/simboloccrCinza.png" id="logoCinza" alt="Logo Cinza">
+                    Fale Conosco
+                </a>
+
+                <div id="linksContainer"> <!-- Novo contêiner para os links -->
+                    <div>
+                        <ul id="divRodapeLinks">Acesse
+                            <li><a href="Rotas_PaginaPrincipal.html" id="linksem">Rotas</a></li>
+                            <li><a href="status.html" id="linksem">Status</a></li>
+                            <li><a href="suporte.html" id="linksem">Suporte</a></li>
+                            <li><a href="chatMobi.html" id="linksem">ChatMobi</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul id="divRodapeLinks"> CCR
+                            <li>
+                                <a href="https://www.viamobilidade.com.br/nos/empresas" id="linksem">Sobre Nós</a>
+                            </li>
+                            <li>
+                                <a href="https://viamobilidade.com.br/politica-de-privacidade" id="linksem">Política de Privacidade</a>
+                            </li>
+                            <li>
+                                <a href="https://www.viamobilidade.com.br/termos-de-uso" id="linksem">Termos de uso</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
-    </footer>
+        </footer>
 
-    <!-- BAIXE O APLICATIVO DA VIA MOBILIDADE -->
-    <footer>
-        <div id="rodape-aplicativo" onclick="tggleAplicativo()">
-            <span id="celular" class="material-symbols-outlined">
-                smartphone
-            </span>
-            <p>Baixe o aplicativo da ViaMobilidade</p>
-        </div>
-    </footer>
-</body>
+        <!-- BAIXE O APLICATIVO DA VIA MOBILIDADE -->
+        <footer>
+            <div id="rodape-aplicativo" onclick="tggleAplicativo()">
+                <span id="celular" class="material-symbols-outlined">
+                    smartphone
+                </span>
+                <p>Baixe o aplicativo da ViaMobilidade</p>
+            </div>
+        </footer>
+    </body>
 </html>
