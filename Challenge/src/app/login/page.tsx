@@ -1,11 +1,52 @@
-import React from 'react';
+"use client";
+
+import React, { useState } from 'react';
+import { useRouter } from 'next/navigation';
 
 const LoginForm = () => {
+  const [email, setEmail] = useState('');
+  const [senha, setSenha] = useState('');
+  const router = useRouter();
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+
+    try {
+      const apiUrl = `/api/usuarios/login`;
+      console.log('Fetching URL:', apiUrl);
+      const response = await fetch(apiUrl, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ email, senha })
+      });
+
+      if (response.ok) {
+        alert('Login realizado com sucesso!');
+        router.push('/');
+      } else {
+        const contentType = response.headers.get('content-type');
+        if (contentType && contentType.indexOf('application/json') !== -1) {
+          const data = await response.json();
+          alert('Erro no login: ' + data.message);
+        } else {
+          const text = await response.text();
+          alert('Erro no login: ' + text);
+          console.error('Erro no login, resposta do servidor:', text);
+        }
+      }
+    } catch (error) {
+      console.error('Erro ao conectar com o servidor.', error);
+      alert('Erro ao conectar com o servidor: ' + (error instanceof Error ? error.message : String(error)));
+    }
+  };
+
   return (
     <div className="flex items-center justify-center flex-grow bg-gray-100 py-5">
       <div className="bg-white p-8 rounded-lg shadow-md w-96">
         <h2 className="text-2xl font-bold text-center mb-6">Entrar</h2>
-        <form>
+        <form onSubmit={handleSubmit}>
           <div className="mb-4">
             <label className="block text-gray-700" htmlFor="email">
               E-mail
@@ -13,6 +54,8 @@ const LoginForm = () => {
             <input
               type="email"
               id="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
               placeholder="seu-email@exemplo.com"
               className="w-full px-3 py-2 border rounded focus:outline-none focus:border-blue-500"
               required
@@ -25,6 +68,8 @@ const LoginForm = () => {
             <input
               type="password"
               id="senha"
+              value={senha}
+              onChange={(e) => setSenha(e.target.value)}
               placeholder="Sua senha"
               className="w-full px-3 py-2 border rounded focus:outline-none focus:border-blue-500"
               required
